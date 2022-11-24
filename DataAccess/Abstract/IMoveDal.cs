@@ -1,6 +1,8 @@
-﻿namespace DataAccess.Abstract
+﻿using Entities.Concrete;
+
+namespace DataAccess.Abstract
 {
-    public interface IMoveDal
+    public interface IMoveDal : IEntityRepository<Move>
     {
 
     }

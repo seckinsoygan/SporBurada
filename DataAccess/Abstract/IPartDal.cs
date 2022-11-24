@@ -2,11 +2,8 @@
 
 namespace DataAccess.Abstract
 {
-    public interface IPartDal
+    public interface IPartDal : IEntityRepository<Part>
     {
-        List<Part> GetAll();
-        void Add(Part part);
-        void Update(Part part);
-        void Delete(Part part);
+
     }
 }

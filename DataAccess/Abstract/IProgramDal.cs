@@ -2,11 +2,8 @@
 
 namespace DataAccess.Abstract
 {
-    public interface IProgramDal
+    public interface IProgramDal : IEntityRepository<Program>
     {
-        List<Program> GetAll();
-        void Add(Program program);
-        void Update(Program program);
-        void Delete(Program program);
+
     }
 }
